@@ -4,7 +4,7 @@ Allows download django log file via api
 
 ### Requirements
 
-- django > 2.2 
+- django >= 2.2 
 - djangorestframework >= 3.9.2 
 - [tailhead](https://github.com/GreatFruitOmsk/tailhead) 
 
