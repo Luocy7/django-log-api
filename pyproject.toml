@@ -26,7 +26,7 @@ packages = [
 
 license = "MIT"
 readme = "README.md"
-homepage = "https://pypi.org/project/django-log-api/"
+homepage = "https://pypi.org/project/django-log-api"
 repository = "https://github.com/Luocy7/django-log-api"
 
 [tool.poetry.dependencies]
