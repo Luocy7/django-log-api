@@ -1,6 +1,5 @@
 from django.conf import settings
 
-
 LOG_READER_DIR_PATH = getattr(
     settings, "LOG_READER_DIR_PATH", getattr(settings, "BASE_DIR") / "logs"
 )
