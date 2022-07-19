@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "django-log-api"
+version = "0.1.0"
+description = "Allows download django log file via api"
+authors = ["luocy <luocy77@gmail.com>"]
+
+packages = [
+    { include = "log_api" }
+]
+
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+tailhead = "^1.0.2"
+django = "^2.2"
+djangorestframework = "^3.9.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[[tool.poetry.source]]
+name = "douban"
+url = "https://pypi.doubanio.com/simple/"
