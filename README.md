@@ -26,7 +26,7 @@ settings.py
 ```python
 INSTALLED_APPS = [
     ...,
-    "src.log_api",
+    "log_api",
 ]
 ```
 
@@ -35,3 +35,5 @@ INSTALLED_APPS = [
 ```python
 path(r"logs/", include("log_api.urls")),
 ```
+
+4. visit 'http://localhost:8000/logs/download' 
