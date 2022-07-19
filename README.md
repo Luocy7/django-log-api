@@ -22,10 +22,11 @@ poetry add django-log-api
 2. Add to the INSTALLED_APPS
 
 settings.py
+
 ```python
 INSTALLED_APPS = [
     ...,
-    "log_api",
+    "src.log_api",
 ]
 ```
 

@@ -73,8 +73,8 @@ reference = "douban"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.6"
-content-hash = "b543dc5a87382d6bf26421d8c6a1d33bec214e4333fd5fe9d5b7c0dbd79f3cc5"
+python-versions = ">=3.6"
+content-hash = "0790c966745e248ecd3330c6b273cd50023e2744ab6e7e059d9bdf9831129000"
 
 [metadata.files]
 django = [

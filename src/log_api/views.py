@@ -1,10 +1,9 @@
 from pathlib import Path
 
 from django.http import FileResponse
+from log_api import settings
 from rest_framework.views import APIView
 from tailhead import tail
-
-from log_api import settings
 
 
 def tail_logs(log_file: Path, tail_lines):
