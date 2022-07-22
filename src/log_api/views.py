@@ -18,6 +18,8 @@ def tail_logs(log_file: Path, tail_lines):
 
 
 class DownloadView(APIView):
+    permission_classes = settings.LOG_PERMISSION_CLASSES
+
     def get(self, request):
         log_name: str = self.request.query_params.get("name")
         if log_name and log_name.count(".") != 1:
