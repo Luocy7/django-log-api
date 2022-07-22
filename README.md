@@ -36,4 +36,8 @@ INSTALLED_APPS = [
 path(r"logs/", include("log_api.urls")),
 ```
 
-4. visit 'http://localhost:8000/logs/download' 
+4. visit 'http://localhost:8000/logs/download/?name=django&tail=100' 
+
+parameters:
+- name: log file name
+- tail: if null, download entire log file, others the tail lines number
