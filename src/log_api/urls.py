@@ -3,5 +3,5 @@ from django.urls import path
 from .views import DownloadView
 
 urlpatterns = [
-    path("download", DownloadView.as_view()),
+    path("download/", DownloadView.as_view()),
 ]
