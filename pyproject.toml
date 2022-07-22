@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-log-api"
-version = "0.1.1"
+version = "0.1.2"
 description = "Allows download django log file via api"
 authors = ["luocy <luocy77@gmail.com>"]
 keywords = ["django", "log", "djangorestframework"]
