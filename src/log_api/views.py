@@ -18,23 +18,23 @@ def tail_logs(log_file: Path, tail_lines):
 
 
 class DownloadView(APIView):
-    permission_classes = settings.LOG_PERMISSION_CLASSES
+    permission_classes = settings.LOG_API_PERMISSION_CLASSES
 
     def get(self, request):
         log_name: str = self.request.query_params.get("name")
         if log_name and log_name.count(".") != 1:
             log_name += ".log"
         else:
-            log_name = settings.LOG_READER_DEFAULT_FILE
+            log_name = settings.LOG_API_DEFAULT_FILE
 
-        file: Path = settings.LOG_READER_DIR_PATH / log_name
+        file: Path = settings.LOG_API_DIR_PATH / log_name
 
         try:
             tail_lines: int = self.request.query_params.get("tail")
             if tail_lines is not None:
                 tail_lines = int(tail_lines)
         except ValueError:
-            tail_lines: int = settings.LOG_READER_MAX_READ_LINES
+            tail_lines: int = settings.LOG_API_MAX_READ_LINES
 
         response = (
             FileResponse(file.open("rb"))

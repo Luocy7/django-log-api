@@ -28,6 +28,15 @@ INSTALLED_APPS = [
     ...,
     "log_api",
 ]
+
+# log dir path, use Path(), default: BASE_DIR / logs
+LOG_API_DIR_PATH = BASE_DIR / "logs"
+# log file name, default: 'django.log'
+LOG_API_DEFAULT_FILE = "django.log"
+# log tail numbers, default: 1000
+LOG_API_MAX_READ_LINES = 1000
+# log api permission, use drf`s permission, default: AllowAny
+LOG_API_PERMISSION_CLASSES = ("rest_framework.permissions.AllowAny",)
 ```
 
 3. add to urls.py

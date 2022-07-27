@@ -87,6 +87,8 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+LOG_API_PERMISSION_CLASSES = ("rest_framework.permissions.AllowAny",)
+
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
